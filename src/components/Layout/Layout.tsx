@@ -15,7 +15,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
         {/* Main Layout */}
         <div className="w-full h-full relative flex justify-center items-center ">
-          <div className="w-full max-w-[1400px] px-10 mx-auto">
+          <div className="w-full max-w-[1400px] px-2 md:px-10 mx-auto">
             <Navbar />
             <div className="bg-red-500 dark:bg-black min-h-screen mt-1 rounded-md ">
               {children}
