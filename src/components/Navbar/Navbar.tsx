@@ -1,3 +1,8 @@
+
+
+
+
+
 'use client';
 import { useEffect, useState } from "react";
 import Menu from "./Menu/Menu";
@@ -90,6 +95,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 

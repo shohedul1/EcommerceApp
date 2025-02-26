@@ -1,6 +1,3 @@
-"use client";
-
-
 import React, { useState, useCallback } from 'react';
 import ThemeToggle from '../ThemeToggle';
 
@@ -12,16 +9,12 @@ const Menu = () => {
         setIsMenuOpen((prev) => !prev);
     }, []);
 
-
-
-
-
     return (
         <>
             <div className="relative flex items-center space-x-5">
                 {/* Dark Mode Toggle */}
-
                 <ThemeToggle />
+
                 {/* Menu Button */}
                 <button
                     className="md:hidden flex cursor-pointer bg-green-300 p-2 rounded-md"
@@ -51,16 +44,12 @@ const Menu = () => {
                 {/* Desktop Signup Button */}
                 <button
                     onClick={toggleMenu}
-
                     className="hidden md:flex cursor-pointer bg-green-300 p-2 rounded-md"
                     aria-label="Signup"
                 >
                     Signup
                 </button>
-
             </div>
-
-
         </>
     );
 };

@@ -12,17 +12,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
-        {/* Navbar Fixed at the Top */}
-        <div className="w-full h-full flex justify-center items-center ">
-          <div className="w-full max-w-[1400px] px-10 mx-auto">
-            <Navbar />
-          </div>
-        </div>
 
         {/* Main Layout */}
-        <div className="w-full h-full flex justify-center items-center pt-[10px]">
+        <div className="w-full h-full relative flex justify-center items-center ">
           <div className="w-full max-w-[1400px] px-10 mx-auto">
-            <div className="bg-red-500 dark:bg-black min-h-screen mt-1 rounded-md relative overflow-hidden">
+            <Navbar />
+            <div className="bg-red-500 dark:bg-black min-h-screen mt-1 rounded-md ">
               {children}
             </div>
           </div>
@@ -30,6 +25,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
         {/* Footer */}
         <Footer />
+
       </NextThemesProvider>
     </>
   );
