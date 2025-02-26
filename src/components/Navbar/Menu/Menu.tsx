@@ -1,7 +1,7 @@
 "use client";
 
 
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import ThemeToggle from '../ThemeToggle';
 
 const Menu = () => {
