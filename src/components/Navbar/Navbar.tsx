@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useState } from "react";
-import Menu from "./Menu/Menu";
 import Newbar from "./Newbar/Newbar";
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle/ModeToggle";
 const LinkData = [
   {
     name: "Home",
@@ -74,7 +74,9 @@ const Navbar = () => {
                 <div>
                   +8801758225368
                 </div>
-                <Menu />
+                {/* dark feture */}
+                <ModeToggle />
+                {/* <Menu /> */}
               </div>
             </div>
           </div>
@@ -90,5 +92,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 

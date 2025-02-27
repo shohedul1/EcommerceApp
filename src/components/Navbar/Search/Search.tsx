@@ -44,12 +44,12 @@ const Search: React.FC<SearchProps> = ({ showSearch, setShowSearch }) => {
         <input
           type="text"
           placeholder="Search Food..."
-          className="w-full border p-2 rounded-md outline-none"
+          className="w-full border dark:border-white border-black p-2 rounded-md outline-none"
         />
       </div>
       <IoSearchOutline
         size={24}
-        className="cursor-pointer text-gray-600 hover:text-black transition-colors"
+        className="cursor-pointer text-black font-bold dark:text-white transition-colors"
         onClick={() => setShowSearch(!showSearch)}
       />
     </div>
