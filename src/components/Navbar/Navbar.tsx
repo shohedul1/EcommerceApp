@@ -1,8 +1,3 @@
-
-
-
-
-
 'use client';
 import { useEffect, useState } from "react";
 import Menu from "./Menu/Menu";
@@ -86,7 +81,7 @@ const Navbar = () => {
         </div>
 
         {/* New Bar (Fixed After Scroll) */}
-        <div className={`w-full bg-red-50 rounded-lg ${header ? ' transition-all duration-500 fixed top-0 left-0 z-20 px-10' : " "}`}>
+        <div className={`${header ? 'px-1 md:px-10 w-full bg-white dark:bg-black py-4 transition-all duration-500 fixed top-0 left-0 z-20' : " hidden"}`}>
           <Newbar />
         </div>
       </div>
