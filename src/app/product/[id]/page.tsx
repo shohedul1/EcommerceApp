@@ -5,14 +5,7 @@ import { cards } from '@/lib/data';
 import { FcRating } from 'react-icons/fc';
 import Image from 'next/image';
 
-interface Product {
-    id: number;
-    images: string;
-    title: string;
-    description: string;
-    price: number;  // Keep price as a number
-    rating: number;  // Keep rating as a number
-}
+
 
 interface ProductPageProps {
     params: Promise<{ id: string }>;
