@@ -5,7 +5,16 @@ import { cards } from '@/lib/data';
 import { FcRating } from 'react-icons/fc';
 import Image from 'next/image';
 
-
+// Define your Product type to match the shape of the card objects
+interface Product {
+    id: number;
+    images: string;
+    title: string;
+    description: string;
+    price: string;  // Assuming price is a string in your data
+    fixedPrice: string;
+    rating: string;  // Assuming rating is a string in your data
+}
 
 interface ProductPageProps {
     params: Promise<{ id: string }>;
@@ -14,8 +23,8 @@ interface ProductPageProps {
 const ProductPage = ({ params }: ProductPageProps) => {
     const { id } = use(params);
 
-    // Convert card's price and rating from string to number for comparison
-    const product = cards.find((card: any) => card.id === Number(id));
+    // Find the matching product with the proper type
+    const product = cards.find((card: Product) => card.id === Number(id));
 
     if (!product) {
         return <div>Product not found</div>;
