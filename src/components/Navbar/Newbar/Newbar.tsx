@@ -31,21 +31,21 @@ const Newbar = () => {
 
         <Search showSearch={showSearch} setShowSearch={setShowSearch} />
         {/* Wishlist Icon and Badge */}
-        <div className='flex items-center space-x-1 relative'>
+        <Link href={"/wishlist"} className='flex items-center space-x-1 relative'>
           <p className='md:flex hidden'>Wishlist</p>
           <FaHeartCircleBolt size={40} />
           <div className='absolute top-0 right-0 bg-red-900 text-white rounded-full text-xs w-4 h-4 flex items-center justify-center'>
             0
           </div>
-        </div>
+        </Link>
         {/* Cart Icon and Badge */}
-        <div className='flex items-center space-x-1 relative'>
+        <Link href={"/cart"} className='flex items-center space-x-1 relative'>
           <p className='md:flex hidden'>Cart</p>
           <BsCartFill size={40} />
           <div className='absolute bg-red-900 text-white top-0 right-0  rounded-full text-xs w-4 h-4 flex items-center justify-center'>
             0
           </div>
-        </div>
+        </Link>
       </div>
 
     </div>
