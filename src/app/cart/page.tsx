@@ -11,7 +11,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import Image from "next/image";
-import { MdDelete, MdOutlineRemoveCircleOutline } from "react-icons/md";
+import { MdOutlineRemoveCircleOutline } from "react-icons/md";
 import { FaPlus } from "react-icons/fa6";
 import DialogCloseButton from "./DialogCloseButton/DialogCloseButton";
 import CardSection from "@/components/HomePage/components/Card/CardSection";
