@@ -7,6 +7,7 @@ import Image from "next/image";
 import { FcRating } from "react-icons/fc";
 import { cards } from "@/lib/data";
 import Link from "next/link";
+import { FaBasketShopping } from "react-icons/fa6";
 
 const CardSection = ({ title }: { title: string }) => {
     return (
@@ -64,7 +65,8 @@ const CardSection = ({ title }: { title: string }) => {
                                     </div>
 
                                     <Button className="bg-red-500 px-2 text-white hover:bg-red-600">
-                                        Shop Now
+                                        <FaBasketShopping/>
+                                        Add
                                     </Button>
                                 </div>
                             </CardContent>
