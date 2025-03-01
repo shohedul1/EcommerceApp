@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import React, { memo } from 'react';
 
 // Type for ProductCard component
 type ProductCardProps = {
@@ -8,7 +7,7 @@ type ProductCardProps = {
 };
 
 // Memoize the product card for performance
-export const ProductCard: React.FC<ProductCardProps> = memo(({ index, price }) => (
+export const ProductCardComponent: React.FC<ProductCardProps> = ({ index, price }) => (
     <div key={index} className="p-4 rounded hover:bg-red-200 duration-500 transition-all">
         <div className="flex items-center gap-4 border-b border-red-100">
             <div className="w-20 h-20 relative">
